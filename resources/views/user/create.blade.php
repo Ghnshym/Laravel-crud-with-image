@@ -11,7 +11,9 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    @include('layout.app');
     <div class="container">
+      <h2>Register here </h2>
         <div class="container">
             @if($message= Session::get('message'))
                 <div class="alert alert-success alert-block alert-dismissible"> <strong>{{ $message }}</strong></div>
